@@ -1,5 +1,5 @@
 {% set name = "pyrobuf" %}
-{% set version = "0.8.2" %}
+{% set version = "0.8.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 688f00e6e6bfbaafa0583e5b7c4bf5de186b59c8fa6307e689cb719c63eeb5f1
+  sha256: 0ba4f1116806daa172628a04a8b6a642adab689e8e133479e72149c3698f5346
 
 build:
-  number: 1000
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
   entry_points:
     - pyrobuf = pyrobuf.__main__:main
