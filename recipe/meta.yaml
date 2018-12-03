@@ -10,7 +10,7 @@ source:
   sha256: a58e70c88ec530b4c4a61a273fc614649750a162e873570d985c147b08a28cac
 
 build:
-  number: 0
+  number: 1000
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
   entry_points:
     - pyrobuf = pyrobuf.__main__:main
