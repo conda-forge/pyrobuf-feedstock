@@ -1,5 +1,5 @@
 {% set name = "pyrobuf" %}
-{% set version = "0.8.4" %}
+{% set version = "0.8.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a58e70c88ec530b4c4a61a273fc614649750a162e873570d985c147b08a28cac
+  sha256: fff4700f7496d9c87b1213a35f789a1a003e036e306b083448eaa96c53e21efd
 
 build:
   number: 1000
