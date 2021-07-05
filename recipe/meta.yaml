@@ -30,6 +30,7 @@ requirements:
     - jinja2 >=2.8
     - cython >=0.23
     - python
+    - setuptools
 
 test:
   imports:
