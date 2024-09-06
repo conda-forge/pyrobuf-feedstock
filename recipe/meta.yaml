@@ -10,7 +10,7 @@ source:
   sha256: 9cca7f992c674645522247e23cf6c4d81cca42e5a65e4ae1d05f3967b0c07a80
 
 build:
-  number: 6
+  number: 7
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   entry_points:
     - pyrobuf = pyrobuf.__main__:main
@@ -21,6 +21,7 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - cython                                 # [build_platform != target_platform]
     - {{ compiler("c") }}
+    - {{ stdlib("c") }}
     - {{ compiler("cxx") }}
   host:
     - python
